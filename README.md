@@ -8,6 +8,12 @@
 
 应用使用 **Kotlin + Jetpack Compose**，数据保存在本机。当前版本 **0.8.0**，支持 **Android 8.0 及以上**。
 
+## 下载
+
+[下载 v0.8.0 Release 安装包](https://github.com/lc-052/jidiu_savemoney/releases/download/v0.8.0/jidiu-savemoney-v0.8.0-release.apk) · [查看发布说明](https://github.com/lc-052/jidiu_savemoney/releases/tag/v0.8.0)
+
+当前发布包为开发测试版，沿用已有测试签名，支持覆盖之前收到的安装包并保留本机数据。
+
 ## 它怎么玩？
 
 新安装从一个纯白色基础小人、一间空房和零存款记录开始。
@@ -110,6 +116,14 @@ adb install -r app/build/outputs/apk/debug/app-debug.apk
 ```
 
 这是开发测试构建。覆盖已有应用时，需要保持相同的应用标识和签名；在另一台电脑生成的调试签名可能不同。应用标识为 `com.jidiu.companion`。
+
+### 构建 Release
+
+```powershell
+.\gradlew.bat :app:assembleRelease
+```
+
+输出到 `app/build/outputs/apk/release/app-release.apk`。Release 关闭调试模式，启用代码优化、混淆与资源压缩。当前配置使用本机调试签名，以兼容现有开发测试安装包；签名文件不会提交到仓库。
 
 ## 验证
 
