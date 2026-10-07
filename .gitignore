@@ -1,0 +1,25 @@
+.gradle/
+.kotlin/
+.idea/
+**/build/
+local.properties
+*.iml
+captures/
+*.apk
+*.aab
+*.jks
+*.keystore
+*.db
+*.db-shm
+*.db-wal
+.env
+.env.*
+*.log
+
+# Local artwork drafts, references and previous-version previews.
+/art/
+/previews/*
+!/previews/home-v0.8.0.png
+!/previews/wardrobe-v0.8.0.png
+!/previews/custom-gift-v0.8.0.png
+!/previews/validation-v0.8.0.md
